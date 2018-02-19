@@ -4,12 +4,12 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="reservationsystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="reservationsystemConnectionString (Settings)" PropertyReference="ApplicationSettings.Kirjautumissivu.Properties.Settings.GlobalReference.Default.reservationsystemConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="reservationsystemConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="reservationsystemConnectionString1 (Settings)" PropertyReference="ApplicationSettings.Kirjautumissivu.Properties.Settings.GlobalReference.Default.reservationsystemConnectionString1" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AsiakasTableAdapter" GeneratorDataComponentClassName="AsiakasTableAdapter" Name="Asiakas" UserDataComponentName="AsiakasTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="reservationsystemConnectionString (Settings)" DbObjectName="Asiakas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="reservationsystemConnectionString1 (Settings)" DbObjectName="Asiakas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Asiakas` WHERE ((`Asiakas_ID` = ?) AND ((? = 1 AND `PuhNro` IS NULL) OR (`PuhNro` = ?)) AND ((? = 1 AND `PostiNro` IS NULL) OR (`PostiNro` = ?)) AND ((? = 1 AND `Postitoimipaikka` IS NULL) OR (`Postitoimipaikka` = ?)) AND ((? = 1 AND `Sahkoposti` IS NULL) OR (`Sahkoposti` = ?)) AND ((? = 1 AND `Salasana` IS NULL) OR (`Salasana` = ?)))</CommandText>
@@ -92,7 +92,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LainausrivitTableAdapter" GeneratorDataComponentClassName="LainausrivitTableAdapter" Name="Lainausrivit" UserDataComponentName="LainausrivitTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="reservationsystemConnectionString (Settings)" DbObjectName="Lainausrivit" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="reservationsystemConnectionString1 (Settings)" DbObjectName="Lainausrivit" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Lainausrivit` WHERE ((`Lainausrivit_ID` = ?) AND ((? = 1 AND `Tuote_ID` IS NULL) OR (`Tuote_ID` = ?)) AND ((? = 1 AND `Lainaus_ID` IS NULL) OR (`Lainaus_ID` = ?)) AND ((? = 1 AND `Lainan_aloitus_pvm` IS NULL) OR (`Lainan_aloitus_pvm` = ?)) AND ((? = 1 AND `Lainan_lopetus_pvm` IS NULL) OR (`Lainan_lopetus_pvm` = ?)))</CommandText>
@@ -159,7 +159,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TilausTableAdapter" GeneratorDataComponentClassName="TilausTableAdapter" Name="Tilaus" UserDataComponentName="TilausTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="reservationsystemConnectionString (Settings)" DbObjectName="Tilaus" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="reservationsystemConnectionString1 (Settings)" DbObjectName="Tilaus" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Tilaus` WHERE ((`Tilaus_ID` = ?) AND ((? = 1 AND `Asiakas_ID` IS NULL) OR (`Asiakas_ID` = ?)))</CommandText>
@@ -205,7 +205,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TuotteetTableAdapter" GeneratorDataComponentClassName="TuotteetTableAdapter" Name="Tuotteet" UserDataComponentName="TuotteetTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="reservationsystemConnectionString (Settings)" DbObjectName="Tuotteet" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="reservationsystemConnectionString1 (Settings)" DbObjectName="Tuotteet" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Tuotteet` WHERE ((`Tuote_ID` = ?) AND ((? = 1 AND `Tuotteen_nimi` IS NULL) OR (`Tuotteen_nimi` = ?)) AND ((? = 1 AND `Tuote_tyyppi` IS NULL) OR (`Tuote_tyyppi` = ?)) AND ((? = 1 AND `Tuotteen_valmistaja` IS NULL) OR (`Tuotteen_valmistaja` = ?)) AND ((? = 1 AND `Tuotteen_tiedot` IS NULL) OR (`Tuotteen_tiedot` = ?)) AND ((? = 1 AND `Tuotteen_tila` IS NULL) OR (`Tuotteen_tila` = ?)))</CommandText>
@@ -274,6 +274,87 @@
               <Mapping SourceColumn="Tuotteen_valmistaja" DataSetColumn="Tuotteen_valmistaja" />
               <Mapping SourceColumn="Tuotteen_tiedot" DataSetColumn="Tuotteen_tiedot" />
               <Mapping SourceColumn="Tuotteen_tila" DataSetColumn="Tuotteen_tila" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VarausTableAdapter" GeneratorDataComponentClassName="VarausTableAdapter" Name="Varaus" UserDataComponentName="VarausTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="reservationsystemConnectionString1 (Settings)" DbObjectName="Varaus" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `Varaus` WHERE ((`Varaus_ID` = ?) AND ((? = 1 AND `Varaajan_nimi` IS NULL) OR (`Varaajan_nimi` = ?)) AND ((? = 1 AND `Varaajan_p-tunnus` IS NULL) OR (`Varaajan_p-tunnus` = ?)) AND ((? = 1 AND `Varaajan_puhnumero` IS NULL) OR (`Varaajan_puhnumero` = ?)) AND ((? = 1 AND `Vaaraajan_sahkoposti` IS NULL) OR (`Vaaraajan_sahkoposti` = ?)) AND ((? = 1 AND `Varaus_aloitus_pvm` IS NULL) OR (`Varaus_aloitus_pvm` = ?)) AND ((? = 1 AND `Varaus_lopetus_pvm` IS NULL) OR (`Varaus_lopetus_pvm` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Varaus_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaus_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaajan_nimi" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaajan_nimi" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Varaajan_nimi" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_nimi" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaajan_p-tunnus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaajan_p-tunnus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Varaajan_p-tunnus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_p-tunnus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaajan_puhnumero" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaajan_puhnumero" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Varaajan_puhnumero" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_puhnumero" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Vaaraajan_sahkoposti" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Vaaraajan_sahkoposti" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Vaaraajan_sahkoposti" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Vaaraajan_sahkoposti" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaus_aloitus_pvm" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaus_aloitus_pvm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Varaus_aloitus_pvm" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Varaus_aloitus_pvm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaus_lopetus_pvm" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaus_lopetus_pvm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Varaus_lopetus_pvm" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Varaus_lopetus_pvm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `Varaus` (`Varaajan_nimi`, `Varaajan_p-tunnus`, `Varaajan_puhnumero`, `Vaaraajan_sahkoposti`, `Varaus_aloitus_pvm`, `Varaus_lopetus_pvm`) VALUES (?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Varaajan_nimi" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_nimi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Varaajan_p-tunnus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_p-tunnus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Varaajan_puhnumero" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_puhnumero" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Vaaraajan_sahkoposti" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Vaaraajan_sahkoposti" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Varaus_aloitus_pvm" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Varaus_aloitus_pvm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Varaus_lopetus_pvm" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Varaus_lopetus_pvm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Varaus_ID, Varaajan_nimi, [Varaajan_p-tunnus], Varaajan_puhnumero, Vaaraajan_sahkoposti, Varaus_aloitus_pvm, Varaus_lopetus_pvm FROM Varaus</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `Varaus` SET `Varaajan_nimi` = ?, `Varaajan_p-tunnus` = ?, `Varaajan_puhnumero` = ?, `Vaaraajan_sahkoposti` = ?, `Varaus_aloitus_pvm` = ?, `Varaus_lopetus_pvm` = ? WHERE ((`Varaus_ID` = ?) AND ((? = 1 AND `Varaajan_nimi` IS NULL) OR (`Varaajan_nimi` = ?)) AND ((? = 1 AND `Varaajan_p-tunnus` IS NULL) OR (`Varaajan_p-tunnus` = ?)) AND ((? = 1 AND `Varaajan_puhnumero` IS NULL) OR (`Varaajan_puhnumero` = ?)) AND ((? = 1 AND `Vaaraajan_sahkoposti` IS NULL) OR (`Vaaraajan_sahkoposti` = ?)) AND ((? = 1 AND `Varaus_aloitus_pvm` IS NULL) OR (`Varaus_aloitus_pvm` = ?)) AND ((? = 1 AND `Varaus_lopetus_pvm` IS NULL) OR (`Varaus_lopetus_pvm` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Varaajan_nimi" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_nimi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Varaajan_p-tunnus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_p-tunnus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Varaajan_puhnumero" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_puhnumero" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Vaaraajan_sahkoposti" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Vaaraajan_sahkoposti" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Varaus_aloitus_pvm" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Varaus_aloitus_pvm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Varaus_lopetus_pvm" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Varaus_lopetus_pvm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Varaus_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaus_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaajan_nimi" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaajan_nimi" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Varaajan_nimi" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_nimi" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaajan_p-tunnus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaajan_p-tunnus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Varaajan_p-tunnus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_p-tunnus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaajan_puhnumero" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaajan_puhnumero" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Varaajan_puhnumero" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Varaajan_puhnumero" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Vaaraajan_sahkoposti" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Vaaraajan_sahkoposti" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Vaaraajan_sahkoposti" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Vaaraajan_sahkoposti" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaus_aloitus_pvm" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaus_aloitus_pvm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Varaus_aloitus_pvm" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Varaus_aloitus_pvm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Varaus_lopetus_pvm" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Varaus_lopetus_pvm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Varaus_lopetus_pvm" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Varaus_lopetus_pvm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Varaus_ID" DataSetColumn="Varaus_ID" />
+              <Mapping SourceColumn="Varaajan_nimi" DataSetColumn="Varaajan_nimi" />
+              <Mapping SourceColumn="Varaajan_p-tunnus" DataSetColumn="Varaajan_p-tunnus" />
+              <Mapping SourceColumn="Varaajan_puhnumero" DataSetColumn="Varaajan_puhnumero" />
+              <Mapping SourceColumn="Vaaraajan_sahkoposti" DataSetColumn="Vaaraajan_sahkoposti" />
+              <Mapping SourceColumn="Varaus_aloitus_pvm" DataSetColumn="Varaus_aloitus_pvm" />
+              <Mapping SourceColumn="Varaus_lopetus_pvm" DataSetColumn="Varaus_lopetus_pvm" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -409,6 +490,43 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Varaus" msprop:Generator_TableClassName="VarausDataTable" msprop:Generator_TableVarName="tableVaraus" msprop:Generator_TablePropName="Varaus" msprop:Generator_RowDeletingName="VarausRowDeleting" msprop:Generator_RowChangingName="VarausRowChanging" msprop:Generator_RowEvHandlerName="VarausRowChangeEventHandler" msprop:Generator_RowDeletedName="VarausRowDeleted" msprop:Generator_UserTableName="Varaus" msprop:Generator_RowChangedName="VarausRowChanged" msprop:Generator_RowEvArgName="VarausRowChangeEvent" msprop:Generator_RowClassName="VarausRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Varaus_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnVaraus_ID" msprop:Generator_ColumnPropNameInRow="Varaus_ID" msprop:Generator_ColumnPropNameInTable="Varaus_IDColumn" msprop:Generator_UserColumnName="Varaus_ID" type="xs:int" />
+              <xs:element name="Varaajan_nimi" msprop:Generator_ColumnVarNameInTable="columnVaraajan_nimi" msprop:Generator_ColumnPropNameInRow="Varaajan_nimi" msprop:Generator_ColumnPropNameInTable="Varaajan_nimiColumn" msprop:Generator_UserColumnName="Varaajan_nimi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Varaajan_p-tunnus" msprop:Generator_ColumnVarNameInTable="_columnVaraajan_p_tunnus" msprop:Generator_ColumnPropNameInRow="_Varaajan_p_tunnus" msprop:Generator_ColumnPropNameInTable="_Varaajan_p_tunnusColumn" msprop:Generator_UserColumnName="Varaajan_p-tunnus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Varaajan_puhnumero" msprop:Generator_ColumnVarNameInTable="columnVaraajan_puhnumero" msprop:Generator_ColumnPropNameInRow="Varaajan_puhnumero" msprop:Generator_ColumnPropNameInTable="Varaajan_puhnumeroColumn" msprop:Generator_UserColumnName="Varaajan_puhnumero" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vaaraajan_sahkoposti" msprop:Generator_ColumnVarNameInTable="columnVaaraajan_sahkoposti" msprop:Generator_ColumnPropNameInRow="Vaaraajan_sahkoposti" msprop:Generator_ColumnPropNameInTable="Vaaraajan_sahkopostiColumn" msprop:Generator_UserColumnName="Vaaraajan_sahkoposti" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Varaus_aloitus_pvm" msprop:Generator_ColumnVarNameInTable="columnVaraus_aloitus_pvm" msprop:Generator_ColumnPropNameInRow="Varaus_aloitus_pvm" msprop:Generator_ColumnPropNameInTable="Varaus_aloitus_pvmColumn" msprop:Generator_UserColumnName="Varaus_aloitus_pvm" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Varaus_lopetus_pvm" msprop:Generator_ColumnVarNameInTable="columnVaraus_lopetus_pvm" msprop:Generator_ColumnPropNameInRow="Varaus_lopetus_pvm" msprop:Generator_ColumnPropNameInTable="Varaus_lopetus_pvmColumn" msprop:Generator_UserColumnName="Varaus_lopetus_pvm" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -426,6 +544,10 @@
     <xs:unique name="Tuotteet_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Tuotteet" />
       <xs:field xpath="mstns:Tuote_ID" />
+    </xs:unique>
+    <xs:unique name="Varaus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Varaus" />
+      <xs:field xpath="mstns:Varaus_ID" />
     </xs:unique>
   </xs:element>
   <xs:annotation>

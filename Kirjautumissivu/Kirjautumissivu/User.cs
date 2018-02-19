@@ -25,7 +25,7 @@ namespace Kirjautumissivu
             try
             {
 
-                using (OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.JET.OLEDB.4.0;Data Source=C:\Users\p119989\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\Access\reservationsystem.mdb"))
+                using (OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\0\reservationsystem.mdb"))
                 {
 
                     connection.Open();
