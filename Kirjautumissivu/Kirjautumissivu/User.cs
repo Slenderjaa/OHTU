@@ -10,15 +10,9 @@ namespace Kirjautumissivu
 {
     class User
     {
-        private static string Username;
+        public string Username { get; set; }
+        public int ID { get; set; }
 
-        public User(string User)
-        { Username = User; }
-
-        public string username()
-        { 
-            return Username;
-        }
 
         public static User createuser(string username, string password)
         {
@@ -51,7 +45,9 @@ namespace Kirjautumissivu
                         reader.Read();
 
 
-                        User = new User(username);
+                        User = new User();
+                        User.ID =  (int)reader[0];
+                        User.Username = (string)reader[1].ToString() + " " + (string)reader[2].ToString();
                     }
                     return User;
                 }

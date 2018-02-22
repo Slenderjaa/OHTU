@@ -41,13 +41,16 @@
             this.txtKayttaja.Name = "txtKayttaja";
             this.txtKayttaja.Size = new System.Drawing.Size(130, 20);
             this.txtKayttaja.TabIndex = 0;
+            this.txtKayttaja.Text = "admin";
             // 
             // txtSalasana
             // 
             this.txtSalasana.Location = new System.Drawing.Point(142, 69);
             this.txtSalasana.Name = "txtSalasana";
+            this.txtSalasana.PasswordChar = '*';
             this.txtSalasana.Size = new System.Drawing.Size(130, 20);
             this.txtSalasana.TabIndex = 1;
+            this.txtSalasana.Text = "admin";
             // 
             // label1
             // 

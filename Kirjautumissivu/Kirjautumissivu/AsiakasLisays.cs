@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AsiakkaanLisayssivu
+namespace Kirjautumissivu
 {
     public partial class formLisaaAsiakas : Form
     {
-        string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\p119992\Documents\Visual Studio 2015\Projects\TuotteenLisayssivu\TuotteenLisayssivu\Access\reservationsystem.mdb";
+        string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\p119992\Source\Repos\OHTU\Kirjautumissivu\Kirjautumissivu\0\reservationsystem.mdb";
         public formLisaaAsiakas()
         {
             InitializeComponent();
@@ -21,6 +21,38 @@ namespace AsiakkaanLisayssivu
 
         private void FormLisaaAsiakas(object sender, EventArgs e)
         {
+
+
+            {
+                try
+                {
+                    // Etsii tietokannan taulusta Asiakas kaikki tiedot ja tulostaa ne datagrid komponentiin
+                    // määritellään string muuttuja jonkia avulla luodaan oleDb yhteys tilaus tietokantaan 
+                    // HUOM !! kinteä tietokannan osoite
+
+                    //luodaan uusi yhteys
+                    OleDbConnection con = new OleDbConnection(cs);
+                    // annetaan SQL komento joka hakee kaikki  Asiakas taulun tiedot ja järjestää ne asiakas numeronmukaan
+                    OleDbCommand cmd = new OleDbCommand("Select * from Asiakas order by Asiakas_ID ", con);
+                    // Avatan yhteys
+                    con.Open();
+                    // luodaan DataAdapter tietojen käsittelemiseksi 
+                    OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                    // luodaan lomakkeelle Datatable komonentti nimellä asiakas
+                    DataTable asiakas = new DataTable();
+                    // luetaan tiedot asiakas Data Table komponentiin
+                    da.Fill(asiakas);
+                    // Tuodaan tiedot DataGrid komponentiin
+                    gridAsiakas.DataSource = asiakas;
+                    //suljetaan tietokanta yhteys
+                    con.Close();
+                }
+                // mikäli käsittelyssä tapahtuu joku virhe, tulostetaan tieto virhestä näytölle
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
             try
             {
 
@@ -146,6 +178,11 @@ namespace AsiakkaanLisayssivu
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void formLisaaAsiakas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

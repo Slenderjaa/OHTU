@@ -1,4 +1,4 @@
-﻿namespace TuotteenLisayssivu
+﻿namespace Kirjautumissivu
 {
     partial class formTuotteenLisays
     {

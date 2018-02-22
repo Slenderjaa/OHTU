@@ -1,4 +1,4 @@
-﻿namespace AsiakkaanLisayssivu
+﻿namespace Kirjautumissivu
 {
     partial class formLisaaAsiakas
     {
@@ -244,6 +244,7 @@
             this.Controls.Add(this.btnPaivita);
             this.Name = "formLisaaAsiakas";
             this.Text = "FormLisaaAsiakas";
+            this.Load += new System.EventHandler(this.formLisaaAsiakas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridAsiakas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

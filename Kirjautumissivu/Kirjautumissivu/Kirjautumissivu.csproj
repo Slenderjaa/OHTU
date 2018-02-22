@@ -51,6 +51,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Lainaussivu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lainaussivu.Designer.cs">
+      <DependentUpon>Lainaussivu.cs</DependentUpon>
+    </Compile>
     <Compile Include="TuotteenLisays.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +90,9 @@
       <DependentUpon>reservationsystemDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="Lainaussivu.resx">
+      <DependentUpon>Lainaussivu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TuotteenLisays.resx">
       <DependentUpon>TuotteenLisays.cs</DependentUpon>
     </EmbeddedResource>
