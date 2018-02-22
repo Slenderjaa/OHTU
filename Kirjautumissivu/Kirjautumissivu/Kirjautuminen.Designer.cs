@@ -92,6 +92,7 @@
             this.Controls.Add(this.txtKayttaja);
             this.Name = "Form1";
             this.Text = "Kirjautumissivu";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -36,6 +36,11 @@ namespace Kirjautumissivu
                 //varmistetaan jos käyttäjätunnus ja salasana eivät ole samat kuin koodissa, niin ohjelma ei päästä sisään
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

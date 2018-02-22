@@ -100,6 +100,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Name = "Etusivu";
             this.Text = "Etusivu";
+            this.Load += new System.EventHandler(this.Etusivu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

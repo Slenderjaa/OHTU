@@ -61,5 +61,10 @@ namespace Kirjautumissivu
             Form1 kirja = new Form1();
             kirja.ShowDialog();
         }
+
+        private void Etusivu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

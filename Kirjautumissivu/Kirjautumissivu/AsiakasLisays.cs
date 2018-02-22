@@ -13,7 +13,7 @@ namespace Kirjautumissivu
 {
     public partial class formLisaaAsiakas : Form
     {
-        string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\p119992\Source\Repos\OHTU\Kirjautumissivu\Kirjautumissivu\0\reservationsystem.mdb";
+        string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\p119997\Source\Repos\OHTU\Kirjautumissivu\Kirjautumissivu\0\reservationsystem.mdb";
         public formLisaaAsiakas()
         {
             InitializeComponent();

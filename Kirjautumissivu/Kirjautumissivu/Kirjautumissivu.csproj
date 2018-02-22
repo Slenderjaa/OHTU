@@ -52,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Palautus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Palautus.Designer.cs">
+      <DependentUpon>Palautus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lainaussivu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
       <DependentUpon>reservationsystemDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="Palautus.resx">
+      <DependentUpon>Palautus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lainaussivu.resx">
       <DependentUpon>Lainaussivu.cs</DependentUpon>
     </EmbeddedResource>
