@@ -124,7 +124,7 @@ namespace Kirjautumissivu
                     comm2.Parameters.AddWithValue("@Tuote_ID", item.Tuote_ID);
                     comm3.Parameters.AddWithValue("@Tuote_ID", item.Tuote_ID);
                     comm2.Parameters.AddWithValue("@Lainan_aloitus_pvm", dateTimePicker1.Value.ToShortDateString());
-                    comm2.Parameters.AddWithValue("@Lainan_lopetus_pvm", dateTimePicker1.Value.AddDays(14).ToShortDateString());
+                    comm2.Parameters.AddWithValue("@Lainan_lopetus_pvm", dateTimePicker1.Value.AddDays(1).ToShortDateString());
                   
                     comm.ExecuteNonQuery();
                     comm2.ExecuteNonQuery();

@@ -34,7 +34,7 @@ namespace Kirjautumissivu
 
             if (!reader.HasRows)
             {
-                MessageBox.Show("Ei löytynyt lainattavia tavaroita");
+                MessageBox.Show("Palauttamattomia tavaroita ei löytynyt.");
             }
             else
             {
