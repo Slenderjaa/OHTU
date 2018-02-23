@@ -15,7 +15,7 @@ namespace Kirjautumissivu
     
     public partial class formTuotteenLisays : Form
     {
-        string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\p119997\Source\Repos\OHTU\Kirjautumissivu\Kirjautumissivu\0\reservationsystem.mdb";
+        string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\0\reservationsystem.mdb";
         public formTuotteenLisays()
         {
             InitializeComponent();
@@ -79,55 +79,58 @@ namespace Kirjautumissivu
 
         private void btnPoistaTuote_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Haluatko varmasti poistaa tuotteen " + txtTuoteID.Text, "Tuotteen poistaminen", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Haluatko varmasti poistaa tuotteen " + txtTuoteID.Text, "Tuotteen poistaminen", MessageBoxButtons.YesNo);
 
-
-
-            try
+            if (dialogResult == DialogResult.No)
             {
 
-                //luodaan uusi yhteys
-                OleDbConnection con = new OleDbConnection(cs);
-                OleDbCommand comm = new OleDbCommand();
+            }
 
+            else
+            {
 
-
-
-
-                comm.Connection = con;
-                con.Open();
-                // luodaan SQL komento, jonka avulla poistetaan
-                comm.CommandText = "Delete from  Tuotteet Where Tuote_ID=" + txtTuoteID.Text;
-                // suoritetaan SQL komento, joka poistaa tiedot
-                // määritellään muuttuja testi, jonka avulla tarkistetaan, että poistettava asiakas on olemassa
-                int testi = comm.ExecuteNonQuery();
-                con.Close();
-                btnPaivita.PerformClick();
-                if (testi == 0)
+                try
                 {
-                    MessageBox.Show(" Tuotetta ei löydy");
+
+                    //luodaan uusi yhteys
+                    OleDbConnection con = new OleDbConnection(cs);
+                    OleDbCommand comm = new OleDbCommand();
+
+
+
+
+
+                    comm.Connection = con;
+                    con.Open();
+                    // luodaan SQL komento, jonka avulla poistetaan
+                    comm.CommandText = "Delete from  Tuotteet Where Tuote_ID=" + txtTuoteID.Text;
+                    // suoritetaan SQL komento, joka poistaa tiedot
+                    // määritellään muuttuja testi, jonka avulla tarkistetaan, että poistettava asiakas on olemassa
+                    int testi = comm.ExecuteNonQuery();
+                    con.Close();
+                    btnPaivita.PerformClick();
+                    if (testi == 0)
+                    {
+                        MessageBox.Show(" Tuotetta ei löydy");
+                    }
+                    else
+                    {
+                        MessageBox.Show(" Poistettu");
+                    }
+
                 }
-                else
+                catch (Exception)
                 {
-                    MessageBox.Show(" Poistettu");
+                    MessageBox.Show("Anna tuotteen ID");
                 }
 
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Anna tuotteen ID");
-            }
-
         }
-
         private void btnPaivita_Click(object sender, EventArgs e)
         {
             try
             {
-                // Etsii tietokannan taulusta Asiakas kaikki tiedot ja tulostaa ne datagrid komponentiin
-                // määritellään string muuttuja jonkia avulla luodaan oleDb yhteys tilaus tietokantaan 
-                // HUOM !! kinteä tietokannan osoite
-
+               
                 //luodaan uusi yhteys
                 OleDbConnection con = new OleDbConnection(cs);
                 // annetaan SQL komento joka hakee kaikki  Asiakas taulun tiedot ja järjestää ne asiakas numeronmukaan

@@ -13,7 +13,7 @@ namespace Kirjautumissivu
 {
     public partial class formLisaaAsiakas : Form
     {
-        string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\p119997\Source\Repos\OHTU\Kirjautumissivu\Kirjautumissivu\0\reservationsystem.mdb";
+        string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\0\reservationsystem.mdb";
         public formLisaaAsiakas()
         {
             InitializeComponent();
@@ -107,54 +107,58 @@ namespace Kirjautumissivu
         }
 
         private void btnPoista_Click(object sender, EventArgs e)
+
         {
-            MessageBox.Show("Haluatko varmasti poistaa asiakkaan " + txtAsiakasnumero.Text, "Asiakkaan poistaminen", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Haluatko varmasti poistaa asiakkaan " + txtAsiakasnumero.Text, "Asiakkaan poistaminen", MessageBoxButtons.YesNo);
 
-
-
-            try
+            if (dialogResult == DialogResult.No)
             {
-
-                //luodaan uusi yhteys
-                OleDbConnection con = new OleDbConnection(cs);
-                OleDbCommand comm = new OleDbCommand();
-
-
-
-
-
-                comm.Connection = con;
-                con.Open();
-                // luodaan SQL komento, jonka avulla poistetaan
-                comm.CommandText = "Delete from  Asiakas Where Asiakas_ID=" + txtAsiakasnumero.Text;
-                // suoritetaan SQL komento, joka poistaa tiedot
-                // määritellään muuttuja testi, jonka avulla tarkistetaan, että poistettava asiakas on olemassa
-                int testi = comm.ExecuteNonQuery();
-                con.Close();
-                btnPaivita.PerformClick();
-                if (testi == 0)
-                {
-                    MessageBox.Show(" Asiakasta ei löydy");
-                }
-                else
-                {
-                    MessageBox.Show(" Poistettu");
-                }
 
             }
-            catch (Exception)
+
+            else
             {
-                MessageBox.Show("Anna asiakasnumeo");
+                try
+                {
+
+                    //luodaan uusi yhteys
+                    OleDbConnection con = new OleDbConnection(cs);
+                    OleDbCommand comm = new OleDbCommand();
+
+
+
+
+
+                    comm.Connection = con;
+                    con.Open();
+                    // luodaan SQL komento, jonka avulla poistetaan
+                    comm.CommandText = "Delete from  Asiakas Where Asiakas_ID=" + txtAsiakasnumero.Text;
+                    // suoritetaan SQL komento, joka poistaa tiedot
+                    // määritellään muuttuja testi, jonka avulla tarkistetaan, että poistettava asiakas on olemassa
+                    int testi = comm.ExecuteNonQuery();
+                    con.Close();
+                    btnPaivita.PerformClick();
+                    if (testi == 0)
+                    {
+                        MessageBox.Show(" Asiakasta ei löydy");
+                    }
+                    else
+                    {
+                        MessageBox.Show(" Poistettu");
+                    }
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Anna asiakasnumeo");
+                }
             }
         }
 
         private void btnPaivita_Click(object sender, EventArgs e)
         {
             try
-            {
-                // Etsii tietokannan taulusta Asiakas kaikki tiedot ja tulostaa ne datagrid komponentiin
-                // määritellään string muuttuja jonkia avulla luodaan oleDb yhteys tilaus tietokantaan 
-                // HUOM !! kinteä tietokannan osoite
+            { 
 
                 //luodaan uusi yhteys
                 OleDbConnection con = new OleDbConnection(cs);
@@ -170,7 +174,7 @@ namespace Kirjautumissivu
                 da.Fill(asiakas);
                 // Tuodaan tiedot DataGrid komponentiin
                 gridAsiakas.DataSource = asiakas;
-                //suljetaan tietokanta yhteys
+                //suljetaan tietokannan yhteys
                 con.Close();
             }
             // mikäli käsittelyssä tapahtuu joku virhe, tulostetaan tieto virhestä näytölle
