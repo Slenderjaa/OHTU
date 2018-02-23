@@ -18,7 +18,7 @@ namespace Kirjautumissivu
         {
 
             chkListTuotteet.Items.Clear();
-            string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\p119992\Source\Repos\OHTU\Kirjautumissivu\Kirjautumissivu\0\reservationsystem.mdb";
+            string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\0\reservationsystem.mdb";
             OleDbConnection con = new OleDbConnection(cs);
             OleDbCommand comm = new OleDbCommand();
             comm.Connection = con;
@@ -46,8 +46,15 @@ namespace Kirjautumissivu
 
             }
             con.Close();
+            reader.Close();
+            comm.Dispose();
 
-
+        }
+        void updateusers()
+        {
+            string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\0\reservationsystem.mdb";
+            OleDbConnection con = new OleDbConnection(cs);
+            OleDbCommand comm = new OleDbCommand();
 
             comboKayttajat.Items.Clear();
             comm.Connection = con;
@@ -55,7 +62,8 @@ namespace Kirjautumissivu
             // luodaan SQL komento, jonka avulla lisätään tiedot tietokantaan
             comm.CommandText = "SELECT * FROM Asiakas;";
             //suoritetaan SQL komento, joka lisää tiedot
-             reader = comm.ExecuteReader();
+            OleDbDataReader reader = comm.ExecuteReader();
+            
 
             if (!reader.HasRows)
             {
@@ -69,7 +77,7 @@ namespace Kirjautumissivu
                     User.ID = (int)reader[0];
                     User.Username = (string)reader[1].ToString() + " " + (string)reader[2].ToString();
                     comboKayttajat.Items.Add(User);
-                    
+
                     comboKayttajat.DisplayMember = "Username";
                 }
 
@@ -78,6 +86,7 @@ namespace Kirjautumissivu
 
 
         }
+
         public Lainaussivu()
         {
             InitializeComponent();
@@ -85,7 +94,7 @@ namespace Kirjautumissivu
             dateTimePicker1.MaxDate = DateTime.Now.AddDays(28);
 
             update();
-
+            updateusers();
 
             
         }
@@ -96,7 +105,7 @@ namespace Kirjautumissivu
             {
                 try
                 {
-                    string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\p119992\Source\Repos\OHTU\Kirjautumissivu\Kirjautumissivu\0\reservationsystem.mdb";
+                    string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\0\reservationsystem.mdb";
                     //luodaan uusi yhteys
                     OleDbConnection con = new OleDbConnection(cs);
                     OleDbCommand comm = new OleDbCommand();
@@ -108,10 +117,10 @@ namespace Kirjautumissivu
                     
                     con.Open();
         
-                    comm.CommandText = "Insert into Tilaus(Asiakas_ID) VALUES (@user_id);";
-                    comm2.CommandText = " Insert into Lainausrivit(Tuote_ID, Lainaus_ID, Lainan_aloitus_pvm, Lainan_lopetus_pvm, Lainassa) values(@Tuote_ID, @@Identity, @Lainan_aloitus_pvm, @Lainan_lopetus_pvm, Yes);";
+                    comm.CommandText = "Insert into Tilaus(Asiakas_ID) VALUES (@user_id)";
+                    comm2.CommandText = "Insert into Lainausrivit(Tuote_ID, Lainaus_ID, Lainan_aloitus_pvm, Lainan_lopetus_pvm, Lainassa) values(@Tuote_ID, @@Identity, @Lainan_aloitus_pvm, @Lainan_lopetus_pvm, Yes)";
                     comm3.CommandText = "Update Tuotteet SET Tuotteen_tila = 'Lainassa' WHERE Tuote_ID =@Tuote_ID";
-                    comm.Parameters.AddWithValue("@user_ID", comboKayttajat.SelectedItem);
+                    comm.Parameters.AddWithValue("@user_ID", ((User)comboKayttajat.SelectedItem).ID);
                     comm2.Parameters.AddWithValue("@Tuote_ID", item.Tuote_ID);
                     comm3.Parameters.AddWithValue("@Tuote_ID", item.Tuote_ID);
                     comm2.Parameters.AddWithValue("@Lainan_aloitus_pvm", dateTimePicker1.Value.ToShortDateString());

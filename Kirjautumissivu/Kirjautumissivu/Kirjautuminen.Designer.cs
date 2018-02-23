@@ -55,7 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 53);
+            this.label1.Location = new System.Drawing.Point(12, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 2;
@@ -64,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(139, 53);
+            this.label2.Location = new System.Drawing.Point(151, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 3;
@@ -72,7 +72,8 @@
             // 
             // btnKirjaudu
             // 
-            this.btnKirjaudu.Location = new System.Drawing.Point(79, 95);
+            this.btnKirjaudu.Image = global::Kirjautumissivu.Properties.Resources.lol;
+            this.btnKirjaudu.Location = new System.Drawing.Point(91, 124);
             this.btnKirjaudu.Name = "btnKirjaudu";
             this.btnKirjaudu.Size = new System.Drawing.Size(111, 40);
             this.btnKirjaudu.TabIndex = 4;
@@ -84,7 +85,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 198);
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
+            this.ClientSize = new System.Drawing.Size(308, 223);
             this.Controls.Add(this.btnKirjaudu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -92,6 +94,7 @@
             this.Controls.Add(this.txtKayttaja);
             this.Name = "Form1";
             this.Text = "Kirjautumissivu";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

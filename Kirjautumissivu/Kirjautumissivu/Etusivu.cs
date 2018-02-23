@@ -61,5 +61,18 @@ namespace Kirjautumissivu
             Form1 kirja = new Form1();
             kirja.ShowDialog();
         }
+
+        private void Etusivu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
+            Palautus pala = new Palautus();
+            pala.ShowDialog();
+            
+        }
     }
 }

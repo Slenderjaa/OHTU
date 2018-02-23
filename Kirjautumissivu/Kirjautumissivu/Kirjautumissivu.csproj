@@ -52,11 +52,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Palautus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Palautus.Designer.cs">
+      <DependentUpon>Palautus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lainaussivu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Lainaussivu.Designer.cs">
       <DependentUpon>Lainaussivu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShapedButton.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="TuotteenLisays.cs">
       <SubType>Form</SubType>
@@ -90,6 +99,9 @@
       <DependentUpon>reservationsystemDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="Palautus.resx">
+      <DependentUpon>Palautus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lainaussivu.resx">
       <DependentUpon>Lainaussivu.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +125,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,6 +155,11 @@
     <Content Include="0\reservationsystem.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\lol.png" />
+    <None Include="Resources\pekka_mustonen.jpg" />
+    <None Include="Resources\xddd.jpg" />
+    <None Include="Resources\NIIIICEEE.jpg" />
+    <None Include="Resources\Nice.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
