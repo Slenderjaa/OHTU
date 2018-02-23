@@ -66,5 +66,13 @@ namespace Kirjautumissivu
         {
 
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
+            Palautus pala = new Palautus();
+            pala.ShowDialog();
+            
+        }
     }
 }

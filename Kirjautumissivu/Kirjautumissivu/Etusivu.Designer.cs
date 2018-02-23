@@ -33,12 +33,13 @@
             this.btnLopeta = new System.Windows.Forms.Button();
             this.linkLainaus = new System.Windows.Forms.LinkLabel();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(148, 115);
+            this.linkLabel1.Location = new System.Drawing.Point(334, 115);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(154, 13);
             this.linkLabel1.TabIndex = 4;
@@ -49,7 +50,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(148, 85);
+            this.linkLabel2.Location = new System.Drawing.Point(334, 90);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(164, 13);
             this.linkLabel2.TabIndex = 5;
@@ -59,9 +60,10 @@
             // 
             // btnLopeta
             // 
+            this.btnLopeta.Image = global::Kirjautumissivu.Properties.Resources.lol;
             this.btnLopeta.Location = new System.Drawing.Point(12, 289);
             this.btnLopeta.Name = "btnLopeta";
-            this.btnLopeta.Size = new System.Drawing.Size(164, 73);
+            this.btnLopeta.Size = new System.Drawing.Size(162, 73);
             this.btnLopeta.TabIndex = 6;
             this.btnLopeta.Text = "LOPETA OHJELMA";
             this.btnLopeta.UseVisualStyleBackColor = true;
@@ -70,7 +72,7 @@
             // linkLainaus
             // 
             this.linkLainaus.AutoSize = true;
-            this.linkLainaus.Location = new System.Drawing.Point(148, 163);
+            this.linkLainaus.Location = new System.Drawing.Point(334, 152);
             this.linkLainaus.Name = "linkLainaus";
             this.linkLainaus.Size = new System.Drawing.Size(120, 13);
             this.linkLainaus.TabIndex = 7;
@@ -80,6 +82,7 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.Image = global::Kirjautumissivu.Properties.Resources.lol;
             this.btnLogOut.Location = new System.Drawing.Point(323, 289);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(164, 73);
@@ -88,11 +91,24 @@
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.button1_Click);
             // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(334, 185);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(127, 13);
+            this.linkLabel3.TabIndex = 9;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Siirry palautussivulle tästä";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
             // Etusivu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
             this.ClientSize = new System.Drawing.Size(499, 374);
+            this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.linkLainaus);
             this.Controls.Add(this.btnLopeta);
@@ -112,5 +128,6 @@
         private System.Windows.Forms.Button btnLopeta;
         private System.Windows.Forms.LinkLabel linkLainaus;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }

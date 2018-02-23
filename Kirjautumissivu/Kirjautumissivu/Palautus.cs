@@ -16,6 +16,7 @@ namespace Kirjautumissivu
         public Palautus()
         {
             InitializeComponent();
+            update();
         }
         void update()
         {
@@ -55,7 +56,44 @@ namespace Kirjautumissivu
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            foreach (Tavarat item in chkListTuotteet.CheckedItems)
+            {
+                try
+                {
+                    string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\0\reservationsystem.mdb";
+                    //luodaan uusi yhteys
+                    OleDbConnection con = new OleDbConnection(cs);
+                    OleDbCommand comm = new OleDbCommand();
+                    comm.Connection = con;
+                    OleDbCommand comm2 = new OleDbCommand();
+                    comm2.Connection = con;
+                    OleDbCommand comm3 = new OleDbCommand();
+                    comm3.Connection = con;
 
+                    con.Open();
+
+                    
+                    comm2.CommandText = "update Lainausrivit set Lainassa=no where Tuote_ID =@Tuote_ID";
+                    comm3.CommandText = "Update Tuotteet SET Tuotteen_tila = 'Saatavilla' WHERE Tuote_ID =@Tuote_ID";
+                    comm2.Parameters.AddWithValue("@Tuote_ID", item.Tuote_ID);
+                    comm3.Parameters.AddWithValue("@Tuote_ID", item.Tuote_ID);
+                    
+
+                  
+                    comm2.ExecuteNonQuery();
+                    comm3.ExecuteNonQuery();
+                    con.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+
+
+            }
+            update();
         }
     }
-}
+    }
+
