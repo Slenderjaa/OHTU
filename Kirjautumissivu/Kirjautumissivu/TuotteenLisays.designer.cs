@@ -42,6 +42,7 @@
             this.btnPaivita = new System.Windows.Forms.Button();
             this.txtTuoteID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdTuote)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,7 +132,7 @@
             // 
             // btnPoistaTuote
             // 
-            this.btnPoistaTuote.Location = new System.Drawing.Point(611, 498);
+            this.btnPoistaTuote.Location = new System.Drawing.Point(586, 455);
             this.btnPoistaTuote.Name = "btnPoistaTuote";
             this.btnPoistaTuote.Size = new System.Drawing.Size(75, 23);
             this.btnPoistaTuote.TabIndex = 10;
@@ -151,7 +152,7 @@
             // 
             // txtTuoteID
             // 
-            this.txtTuoteID.Location = new System.Drawing.Point(611, 472);
+            this.txtTuoteID.Location = new System.Drawing.Point(586, 429);
             this.txtTuoteID.Name = "txtTuoteID";
             this.txtTuoteID.Size = new System.Drawing.Size(100, 20);
             this.txtTuoteID.TabIndex = 12;
@@ -159,17 +160,28 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(608, 456);
+            this.label5.Location = new System.Drawing.Point(583, 413);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 13;
             this.label5.Text = "Tuotteen ID";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(692, 510);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Palaa etusivulle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // formTuotteenLisays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 545);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTuoteID);
             this.Controls.Add(this.grdTuote);
@@ -209,6 +221,7 @@
         private System.Windows.Forms.Button btnPaivita;
         private System.Windows.Forms.TextBox txtTuoteID;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }
 
