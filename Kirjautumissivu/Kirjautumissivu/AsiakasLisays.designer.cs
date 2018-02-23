@@ -48,6 +48,7 @@
             this.btnPaivita = new System.Windows.Forms.Button();
             this.btnLisaa = new System.Windows.Forms.Button();
             this.btnPoista = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridAsiakas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,11 +218,22 @@
             this.btnPoista.UseVisualStyleBackColor = true;
             this.btnPoista.Click += new System.EventHandler(this.btnPoista_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(796, 574);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(91, 30);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Palaa Etusivulle";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // formLisaaAsiakas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 607);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnPoista);
             this.Controls.Add(this.btnLisaa);
             this.Controls.Add(this.txtAsiakasnumero);
@@ -273,6 +285,7 @@
         private System.Windows.Forms.Button btnPaivita;
         private System.Windows.Forms.Button btnLisaa;
         private System.Windows.Forms.Button btnPoista;
+        private System.Windows.Forms.Button button2;
     }
 }
 
