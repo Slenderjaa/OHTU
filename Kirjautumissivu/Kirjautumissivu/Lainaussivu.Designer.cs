@@ -33,12 +33,12 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboKayttajat = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnPalaa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLainaa
             // 
-            this.btnLainaa.Image = global::Kirjautumissivu.Properties.Resources.lol;
-            this.btnLainaa.Location = new System.Drawing.Point(382, 227);
+            this.btnLainaa.Location = new System.Drawing.Point(262, 227);
             this.btnLainaa.Name = "btnLainaa";
             this.btnLainaa.Size = new System.Drawing.Size(109, 51);
             this.btnLainaa.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(277, 86);
+            this.dateTimePicker1.Location = new System.Drawing.Point(282, 77);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 2;
@@ -74,18 +74,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(357, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Valitse asiakas";
             // 
+            // btnPalaa
+            // 
+            this.btnPalaa.Location = new System.Drawing.Point(397, 252);
+            this.btnPalaa.Name = "btnPalaa";
+            this.btnPalaa.Size = new System.Drawing.Size(94, 26);
+            this.btnPalaa.TabIndex = 5;
+            this.btnPalaa.Text = "Palaa etusivulle";
+            this.btnPalaa.UseVisualStyleBackColor = true;
+            this.btnPalaa.Click += new System.EventHandler(this.btnPalaa_Click);
+            // 
             // Lainaussivu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.jeeeeeeeeeeee;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(503, 290);
+            this.Controls.Add(this.btnPalaa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboKayttajat);
             this.Controls.Add(this.dateTimePicker1);
@@ -106,5 +120,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboKayttajat;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnPalaa;
     }
 }

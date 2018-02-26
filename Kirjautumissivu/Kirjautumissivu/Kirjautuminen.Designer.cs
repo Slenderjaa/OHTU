@@ -37,7 +37,7 @@
             // 
             // txtKayttaja
             // 
-            this.txtKayttaja.Location = new System.Drawing.Point(6, 69);
+            this.txtKayttaja.Location = new System.Drawing.Point(12, 69);
             this.txtKayttaja.Name = "txtKayttaja";
             this.txtKayttaja.Size = new System.Drawing.Size(130, 20);
             this.txtKayttaja.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // txtSalasana
             // 
-            this.txtSalasana.Location = new System.Drawing.Point(142, 69);
+            this.txtSalasana.Location = new System.Drawing.Point(154, 69);
             this.txtSalasana.Name = "txtSalasana";
             this.txtSalasana.PasswordChar = '*';
             this.txtSalasana.Size = new System.Drawing.Size(130, 20);
@@ -55,6 +55,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(12, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
@@ -64,6 +66,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(151, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
@@ -72,7 +76,6 @@
             // 
             // btnKirjaudu
             // 
-            this.btnKirjaudu.Image = global::Kirjautumissivu.Properties.Resources.lol;
             this.btnKirjaudu.Location = new System.Drawing.Point(91, 124);
             this.btnKirjaudu.Name = "btnKirjaudu";
             this.btnKirjaudu.Size = new System.Drawing.Size(111, 40);
@@ -85,13 +88,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.jeeeeeeeeeeee;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(308, 223);
             this.Controls.Add(this.btnKirjaudu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSalasana);
             this.Controls.Add(this.txtKayttaja);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Kirjautumissivu";
             this.Load += new System.EventHandler(this.Form1_Load);

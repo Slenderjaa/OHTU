@@ -48,6 +48,7 @@
             this.btnPaivita = new System.Windows.Forms.Button();
             this.btnLisaa = new System.Windows.Forms.Button();
             this.btnPoista = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridAsiakas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,6 +112,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(28, 388);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
@@ -120,6 +123,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(241, 388);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
@@ -129,6 +134,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(28, 439);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
@@ -138,6 +145,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(241, 439);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
@@ -147,6 +156,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(28, 499);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
@@ -156,6 +167,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(134, 499);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 13);
@@ -165,6 +178,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(241, 499);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 13);
@@ -174,7 +189,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(724, 482);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(699, 471);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 13);
             this.label8.TabIndex = 15;
@@ -182,7 +199,7 @@
             // 
             // txtAsiakasnumero
             // 
-            this.txtAsiakasnumero.Location = new System.Drawing.Point(727, 499);
+            this.txtAsiakasnumero.Location = new System.Drawing.Point(702, 492);
             this.txtAsiakasnumero.Name = "txtAsiakasnumero";
             this.txtAsiakasnumero.Size = new System.Drawing.Size(100, 20);
             this.txtAsiakasnumero.TabIndex = 16;
@@ -201,7 +218,7 @@
             // 
             this.btnLisaa.Location = new System.Drawing.Point(31, 551);
             this.btnLisaa.Name = "btnLisaa";
-            this.btnLisaa.Size = new System.Drawing.Size(100, 23);
+            this.btnLisaa.Size = new System.Drawing.Size(151, 44);
             this.btnLisaa.TabIndex = 18;
             this.btnLisaa.Text = "Lisää lainaaja";
             this.btnLisaa.UseVisualStyleBackColor = true;
@@ -209,19 +226,32 @@
             // 
             // btnPoista
             // 
-            this.btnPoista.Location = new System.Drawing.Point(727, 534);
+            this.btnPoista.Location = new System.Drawing.Point(702, 518);
             this.btnPoista.Name = "btnPoista";
-            this.btnPoista.Size = new System.Drawing.Size(100, 23);
+            this.btnPoista.Size = new System.Drawing.Size(107, 27);
             this.btnPoista.TabIndex = 19;
             this.btnPoista.Text = "Poista lainaaja";
             this.btnPoista.UseVisualStyleBackColor = true;
             this.btnPoista.Click += new System.EventHandler(this.btnPoista_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(796, 574);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(91, 30);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Palaa Etusivulle";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // formLisaaAsiakas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.jeeeeeeeeeeee;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(899, 607);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnPoista);
             this.Controls.Add(this.btnLisaa);
             this.Controls.Add(this.txtAsiakasnumero);
@@ -242,6 +272,7 @@
             this.Controls.Add(this.txtSukunimi);
             this.Controls.Add(this.gridAsiakas);
             this.Controls.Add(this.btnPaivita);
+            this.DoubleBuffered = true;
             this.Name = "formLisaaAsiakas";
             this.Text = "FormLisaaAsiakas";
             this.Load += new System.EventHandler(this.formLisaaAsiakas_Load);
@@ -273,6 +304,7 @@
         private System.Windows.Forms.Button btnPaivita;
         private System.Windows.Forms.Button btnLisaa;
         private System.Windows.Forms.Button btnPoista;
+        private System.Windows.Forms.Button button2;
     }
 }
 

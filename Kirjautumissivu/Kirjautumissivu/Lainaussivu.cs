@@ -151,5 +151,10 @@ namespace Kirjautumissivu
         {
 
         }
+
+        private void btnPalaa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
