@@ -72,7 +72,6 @@
             // 
             // btnKirjaudu
             // 
-            this.btnKirjaudu.Image = global::Kirjautumissivu.Properties.Resources.lol;
             this.btnKirjaudu.Location = new System.Drawing.Point(91, 124);
             this.btnKirjaudu.Name = "btnKirjaudu";
             this.btnKirjaudu.Size = new System.Drawing.Size(111, 40);
@@ -85,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.asdasd;
             this.ClientSize = new System.Drawing.Size(308, 223);
             this.Controls.Add(this.btnKirjaudu);
             this.Controls.Add(this.label2);

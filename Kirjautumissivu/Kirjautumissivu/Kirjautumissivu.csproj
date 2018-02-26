@@ -164,6 +164,7 @@
     <Content Include="0\reservationsystem.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\asdasd.jpg" />
     <None Include="Resources\lol.png" />
     <None Include="Resources\pekka_mustonen.jpg" />
     <None Include="Resources\xddd.jpg" />

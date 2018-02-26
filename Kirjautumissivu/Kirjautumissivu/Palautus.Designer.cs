@@ -46,12 +46,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Kirjautumissivu.Properties.Resources.lol;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Image = global::Kirjautumissivu.Properties.Resources.lol;
-            this.button1.Location = new System.Drawing.Point(137, 297);
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Location = new System.Drawing.Point(15, 138);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 68);
+            this.button1.Size = new System.Drawing.Size(120, 32);
             this.button1.TabIndex = 1;
             this.button1.Text = "Palauta";
             this.button1.UseVisualStyleBackColor = false;
@@ -68,9 +66,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(40, 317);
+            this.button2.Location = new System.Drawing.Point(184, 22);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 48);
+            this.button2.Size = new System.Drawing.Size(91, 36);
             this.button2.TabIndex = 3;
             this.button2.Text = "Palaa Etusivulle";
             this.button2.UseVisualStyleBackColor = true;
@@ -81,8 +79,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
-            this.ClientSize = new System.Drawing.Size(287, 377);
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.asdasd;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(287, 246);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
