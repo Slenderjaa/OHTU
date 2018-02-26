@@ -30,7 +30,6 @@
         {
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.btnLopeta = new System.Windows.Forms.Button();
             this.linkLainaus = new System.Windows.Forms.LinkLabel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
@@ -59,16 +58,6 @@
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Siirry asiakkaan lisäyssivulle tästä";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // btnLopeta
-            // 
-            this.btnLopeta.Location = new System.Drawing.Point(115, 127);
-            this.btnLopeta.Name = "btnLopeta";
-            this.btnLopeta.Size = new System.Drawing.Size(123, 37);
-            this.btnLopeta.TabIndex = 6;
-            this.btnLopeta.Text = "Lopeta Ohjelma";
-            this.btnLopeta.UseVisualStyleBackColor = true;
-            this.btnLopeta.Click += new System.EventHandler(this.btnLopeta_Click);
             // 
             // linkLainaus
             // 
@@ -114,7 +103,6 @@
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.linkLainaus);
-            this.Controls.Add(this.btnLopeta);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.DoubleBuffered = true;
@@ -129,7 +117,6 @@
         #endregion
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.Button btnLopeta;
         private System.Windows.Forms.LinkLabel linkLainaus;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.LinkLabel linkLabel3;

@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnKirjaudu = new System.Windows.Forms.Button();
+            this.btnLopeta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtKayttaja
@@ -84,6 +85,16 @@
             this.btnKirjaudu.UseVisualStyleBackColor = true;
             this.btnKirjaudu.Click += new System.EventHandler(this.btnKirjaudu_Click);
             // 
+            // btnLopeta
+            // 
+            this.btnLopeta.Location = new System.Drawing.Point(190, 181);
+            this.btnLopeta.Name = "btnLopeta";
+            this.btnLopeta.Size = new System.Drawing.Size(106, 30);
+            this.btnLopeta.TabIndex = 7;
+            this.btnLopeta.Text = "Lopeta Ohjelma";
+            this.btnLopeta.UseVisualStyleBackColor = true;
+            this.btnLopeta.Click += new System.EventHandler(this.btnLopeta_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +102,7 @@
             this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.jeeeeeeeeeeee;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(308, 223);
+            this.Controls.Add(this.btnLopeta);
             this.Controls.Add(this.btnKirjaudu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -112,6 +124,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnKirjaudu;
+        private System.Windows.Forms.Button btnLopeta;
     }
 }
 

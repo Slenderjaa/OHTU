@@ -41,6 +41,13 @@ namespace Kirjautumissivu
         {
 
         }
+
+        private void btnLopeta_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            this.Close();
+            System.Environment.Exit(0);
+        }
     }
 }
     
