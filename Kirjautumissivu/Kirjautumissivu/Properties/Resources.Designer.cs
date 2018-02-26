@@ -73,6 +73,16 @@ namespace Kirjautumissivu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap jeeeeeeeeeeee {
+            get {
+                object obj = ResourceManager.GetObject("jeeeeeeeeeeee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lol {
             get {
                 object obj = ResourceManager.GetObject("lol", resourceCulture);

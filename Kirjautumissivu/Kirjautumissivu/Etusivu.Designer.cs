@@ -39,7 +39,8 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(30, 55);
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Location = new System.Drawing.Point(131, 32);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(154, 13);
             this.linkLabel1.TabIndex = 4;
@@ -50,7 +51,8 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(30, 32);
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Location = new System.Drawing.Point(131, 9);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(164, 13);
             this.linkLabel2.TabIndex = 5;
@@ -60,9 +62,9 @@
             // 
             // btnLopeta
             // 
-            this.btnLopeta.Location = new System.Drawing.Point(19, 181);
+            this.btnLopeta.Location = new System.Drawing.Point(115, 127);
             this.btnLopeta.Name = "btnLopeta";
-            this.btnLopeta.Size = new System.Drawing.Size(138, 37);
+            this.btnLopeta.Size = new System.Drawing.Size(123, 37);
             this.btnLopeta.TabIndex = 6;
             this.btnLopeta.Text = "Lopeta Ohjelma";
             this.btnLopeta.UseVisualStyleBackColor = true;
@@ -71,7 +73,8 @@
             // linkLainaus
             // 
             this.linkLainaus.AutoSize = true;
-            this.linkLainaus.Location = new System.Drawing.Point(30, 92);
+            this.linkLainaus.BackColor = System.Drawing.Color.Transparent;
+            this.linkLainaus.Location = new System.Drawing.Point(157, 66);
             this.linkLainaus.Name = "linkLainaus";
             this.linkLainaus.Size = new System.Drawing.Size(120, 13);
             this.linkLainaus.TabIndex = 7;
@@ -81,9 +84,9 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(241, 12);
+            this.btnLogOut.Location = new System.Drawing.Point(115, 187);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(135, 37);
+            this.btnLogOut.Size = new System.Drawing.Size(135, 33);
             this.btnLogOut.TabIndex = 8;
             this.btnLogOut.Text = "Kirjaudu Ulos";
             this.btnLogOut.UseVisualStyleBackColor = true;
@@ -92,7 +95,8 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(30, 125);
+            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.Location = new System.Drawing.Point(157, 89);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(127, 13);
             this.linkLabel3.TabIndex = 9;
@@ -104,14 +108,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.asdasd;
-            this.ClientSize = new System.Drawing.Size(417, 284);
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(406, 232);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.linkLainaus);
             this.Controls.Add(this.btnLopeta);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
+            this.DoubleBuffered = true;
             this.Name = "Etusivu";
             this.Text = "Etusivu";
             this.Load += new System.EventHandler(this.Etusivu_Load);
