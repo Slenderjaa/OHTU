@@ -32,13 +32,6 @@ namespace Kirjautumissivu
             Hide();
         }
 
-        private void btnLopeta_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            this.Close();
-            System.Environment.Exit(0);
-
-        }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
