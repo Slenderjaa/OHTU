@@ -103,6 +103,8 @@ namespace Kirjautumissivu
 
 
                         listEntisetLainat.Items.Add(reader["Tuotteen_nimi"]+"  "+dt.ToShortDateString()+" - "+td.ToShortDateString());
+
+
                     }
                 }
             }
