@@ -75,6 +75,7 @@ namespace Kirjautumissivu
 
         private void comboAsiakas_SelectedIndexChanged(object sender, EventArgs e)
         {
+            listEntisetLainat.Items.Clear();
             string nimi = ((User)comboAsiakas.SelectedItem).Username;
             string[] nimet;
             nimet = nimi.Split(' ');

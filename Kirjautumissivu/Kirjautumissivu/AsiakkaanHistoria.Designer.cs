@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.comboAsiakas = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.listEntisetLainat = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // comboAsiakas
             // 
             this.comboAsiakas.FormattingEnabled = true;
-            this.comboAsiakas.Location = new System.Drawing.Point(12, 84);
+            this.comboAsiakas.Location = new System.Drawing.Point(12, 75);
             this.comboAsiakas.Name = "comboAsiakas";
             this.comboAsiakas.Size = new System.Drawing.Size(135, 21);
             this.comboAsiakas.TabIndex = 0;
@@ -55,7 +57,7 @@
             // listEntisetLainat
             // 
             this.listEntisetLainat.FormattingEnabled = true;
-            this.listEntisetLainat.Location = new System.Drawing.Point(272, 84);
+            this.listEntisetLainat.Location = new System.Drawing.Point(272, 75);
             this.listEntisetLainat.MultiColumn = true;
             this.listEntisetLainat.Name = "listEntisetLainat";
             this.listEntisetLainat.ScrollAlwaysVisible = true;
@@ -67,9 +69,14 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(269, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 13);
+            this.label2.Size = new System.Drawing.Size(126, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Asiakkaan entiset lainat";
+            this.label2.Text = "Asiakkaan lainaushistoria";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // AsiakkaanHistoriaSivu
             // 
@@ -93,5 +100,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listEntisetLainat;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
