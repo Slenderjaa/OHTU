@@ -73,6 +73,12 @@
     <Compile Include="ShapedButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TuotteenHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TuotteenHistoria.Designer.cs">
+      <DependentUpon>TuotteenHistoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="TuotteenLisays.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lainaussivu.resx">
       <DependentUpon>Lainaussivu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TuotteenHistoria.resx">
+      <DependentUpon>TuotteenHistoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TuotteenLisays.resx">
       <DependentUpon>TuotteenLisays.cs</DependentUpon>
