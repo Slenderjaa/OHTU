@@ -33,6 +33,7 @@
             this.linkLainaus = new System.Windows.Forms.LinkLabel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -73,7 +74,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(115, 187);
+            this.btnLogOut.Location = new System.Drawing.Point(134, 137);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(135, 33);
             this.btnLogOut.TabIndex = 8;
@@ -93,6 +94,18 @@
             this.linkLabel3.Text = "Siirry palautussivulle tästä";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel4.Location = new System.Drawing.Point(63, 199);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(112, 13);
+            this.linkLabel4.TabIndex = 10;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Asiakkaan historiasivu";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            // 
             // Etusivu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,6 +113,7 @@
             this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(406, 232);
+            this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.linkLainaus);
@@ -120,5 +134,6 @@
         private System.Windows.Forms.LinkLabel linkLainaus;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel linkLabel4;
     }
 }

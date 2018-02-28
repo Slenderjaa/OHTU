@@ -67,5 +67,11 @@ namespace Kirjautumissivu
             pala.ShowDialog();
             
         }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AsiakkaanHistoriaSivu historiaAsiakas = new AsiakkaanHistoriaSivu();
+            historiaAsiakas.ShowDialog();
+        }
     }
 }

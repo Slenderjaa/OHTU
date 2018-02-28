@@ -59,9 +59,9 @@ namespace Kirjautumissivu
             comboKayttajat.Items.Clear();
             comm.Connection = con;
             con.Open();
-            // luodaan SQL komento, jonka avulla lisätään tiedot tietokantaan
+
             comm.CommandText = "SELECT * FROM Asiakas;";
-            //suoritetaan SQL komento, joka lisää tiedot
+       
             OleDbDataReader reader = comm.ExecuteReader();
             
 
