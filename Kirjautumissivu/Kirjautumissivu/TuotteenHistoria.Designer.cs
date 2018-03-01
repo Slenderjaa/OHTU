@@ -76,6 +76,7 @@
             this.listTuotteenHistoria.Name = "listTuotteenHistoria";
             this.listTuotteenHistoria.Size = new System.Drawing.Size(178, 225);
             this.listTuotteenHistoria.TabIndex = 3;
+  
             // 
             // TuotteenHistoria
             // 
@@ -88,7 +89,7 @@
             this.Controls.Add(this.comboBoxTuote);
             this.Name = "TuotteenHistoria";
             this.Text = "TuotteenHistoria";
-            this.Load += new System.EventHandler(this.TuotteenHistoria_Load);
+  
             this.ResumeLayout(false);
             this.PerformLayout();
 
