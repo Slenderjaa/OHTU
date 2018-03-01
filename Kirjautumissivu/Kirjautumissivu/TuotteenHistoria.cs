@@ -106,8 +106,9 @@ namespace Kirjautumissivu
             
         }
 
-  
+        private void TuotteenHistoria_Load(object sender, EventArgs e)
+        {
 
-     
+        }
     }
 }

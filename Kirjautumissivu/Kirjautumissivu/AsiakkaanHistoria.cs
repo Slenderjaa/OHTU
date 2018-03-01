@@ -113,5 +113,10 @@ namespace Kirjautumissivu
            
 
         }
+
+        private void AsiakkaanHistoriaSivu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

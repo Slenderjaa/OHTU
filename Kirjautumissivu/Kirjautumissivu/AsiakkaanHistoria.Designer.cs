@@ -96,6 +96,7 @@
             this.DoubleBuffered = true;
             this.Name = "AsiakkaanHistoriaSivu";
             this.Text = "Asiakkaan historia";
+            this.Load += new System.EventHandler(this.AsiakkaanHistoriaSivu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
