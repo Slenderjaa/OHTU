@@ -58,6 +58,7 @@
     <Compile Include="AsiakkaanHistoria.Designer.cs">
       <DependentUpon>AsiakkaanHistoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class2.cs" />
     <Compile Include="Palautus.cs">
       <SubType>Form</SubType>
     </Compile>
