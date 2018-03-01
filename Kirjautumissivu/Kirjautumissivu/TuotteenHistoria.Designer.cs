@@ -78,7 +78,7 @@
             this.listTuotteenHistoria.FormattingEnabled = true;
             this.listTuotteenHistoria.Location = new System.Drawing.Point(225, 55);
             this.listTuotteenHistoria.Name = "listTuotteenHistoria";
-            this.listTuotteenHistoria.Size = new System.Drawing.Size(178, 225);
+            this.listTuotteenHistoria.Size = new System.Drawing.Size(213, 277);
             this.listTuotteenHistoria.TabIndex = 3;
             // 
             // TuotteenHistoria
