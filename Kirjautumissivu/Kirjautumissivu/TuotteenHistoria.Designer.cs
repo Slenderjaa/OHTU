@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.listTuotteenHistoria = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBoxTuote
@@ -81,6 +82,16 @@
             this.listTuotteenHistoria.Size = new System.Drawing.Size(213, 277);
             this.listTuotteenHistoria.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(15, 309);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Palaa etusivulle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TuotteenHistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -88,6 +99,7 @@
             this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.jeeeeeeeeeeee;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(462, 352);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listTuotteenHistoria);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -108,5 +120,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ListBox listTuotteenHistoria;
+        private System.Windows.Forms.Button button1;
     }
 }
