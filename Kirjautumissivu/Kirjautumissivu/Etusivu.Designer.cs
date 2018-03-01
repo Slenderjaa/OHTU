@@ -41,7 +41,8 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Location = new System.Drawing.Point(131, 32);
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(12, 76);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(154, 13);
             this.linkLabel1.TabIndex = 4;
@@ -53,7 +54,8 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.Location = new System.Drawing.Point(131, 9);
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
+            this.linkLabel2.Location = new System.Drawing.Point(220, 76);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(164, 13);
             this.linkLabel2.TabIndex = 5;
@@ -65,7 +67,8 @@
             // 
             this.linkLainaus.AutoSize = true;
             this.linkLainaus.BackColor = System.Drawing.Color.Transparent;
-            this.linkLainaus.Location = new System.Drawing.Point(157, 66);
+            this.linkLainaus.LinkColor = System.Drawing.Color.White;
+            this.linkLainaus.Location = new System.Drawing.Point(264, 107);
             this.linkLainaus.Name = "linkLainaus";
             this.linkLainaus.Size = new System.Drawing.Size(120, 13);
             this.linkLainaus.TabIndex = 7;
@@ -75,7 +78,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(134, 137);
+            this.btnLogOut.Location = new System.Drawing.Point(134, 187);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(135, 33);
             this.btnLogOut.TabIndex = 8;
@@ -87,7 +90,8 @@
             // 
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel3.Location = new System.Drawing.Point(157, 89);
+            this.linkLabel3.LinkColor = System.Drawing.Color.White;
+            this.linkLabel3.Location = new System.Drawing.Point(12, 107);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(127, 13);
             this.linkLabel3.TabIndex = 9;
@@ -99,7 +103,8 @@
             // 
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel4.Location = new System.Drawing.Point(63, 199);
+            this.linkLabel4.LinkColor = System.Drawing.Color.White;
+            this.linkLabel4.Location = new System.Drawing.Point(12, 145);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(112, 13);
             this.linkLabel4.TabIndex = 10;
@@ -110,7 +115,10 @@
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Location = new System.Drawing.Point(214, 199);
+            this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.linkLabel5.LinkColor = System.Drawing.Color.White;
+            this.linkLabel5.Location = new System.Drawing.Point(296, 145);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(88, 13);
             this.linkLabel5.TabIndex = 12;
@@ -122,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.NIIIICEEE;
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.jeeeeeeeeeeee;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(406, 232);
             this.Controls.Add(this.linkLabel5);

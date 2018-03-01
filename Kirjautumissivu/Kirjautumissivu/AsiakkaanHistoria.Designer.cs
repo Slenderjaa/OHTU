@@ -48,6 +48,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(12, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
@@ -67,6 +69,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(269, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 13);
@@ -82,11 +86,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Kirjautumissivu.Properties.Resources.jeeeeeeeeeeee;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(611, 357);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listEntisetLainat);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboAsiakas);
+            this.DoubleBuffered = true;
             this.Name = "AsiakkaanHistoriaSivu";
             this.Text = "Asiakkaan historia";
             this.ResumeLayout(false);
